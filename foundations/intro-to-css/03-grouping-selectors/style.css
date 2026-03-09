@@ -1,1 +1,16 @@
 /* Add CSS Styling */
+.button{
+    border-radius: 0%;
+    font-size: 20px;
+    border-color: rgb(90, 90, 90);
+}
+.first_option{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.second_option{
+    background-color: yellow;
+    
+}
