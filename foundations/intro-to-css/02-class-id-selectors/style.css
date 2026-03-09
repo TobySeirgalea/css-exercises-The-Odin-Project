@@ -1,1 +1,21 @@
 /* Add CSS Styling */
+
+#number_2 {
+    font-size: 50px;
+    color: blue;
+}
+
+#number_4 {
+    font-size: 30px;
+    font-weight: bold;
+    background-color: lightgreen;
+}
+
+.class{
+    background-color: pink;
+    font-size: 20px;
+}
+
+.cooler{
+    font-size: 35px;
+}
