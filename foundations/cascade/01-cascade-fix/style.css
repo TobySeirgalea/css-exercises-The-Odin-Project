@@ -1,35 +1,45 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
+/*
+- El segundo párrafo aplicará esta por coincidir en .small-para
+- El primer párrafo aplicará esta por coincidir en para*/
 .para,
 .small-para {
   color: hsl(0, 0%, 0%);
   font-weight: 800;
 }
 
-.small-para {
-  font-size: 14px;
-  font-weight: 800;
-}
-
+/*
+- El primer párrafo aplicará luego esta que viene luego en orden de cascada por ubicarse en una línea inferior. Aplicará este font-size, si hubiera otro arriba aplicaría este también.
+*/
 .para {
   font-size: 22px;
 }
-
-.confirm {
-  background: green;
-  color: white;
-  font-weight: bold;
-} 
+/*
+- Explicación análoga a la de arriba. Eliminé font-weight porque se repite.
+*/
+.small-para {
+  font-size: 14px;
+}
 
 .button {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
-
-.child {
+/*
+- Al ubicarlo después de .button, aplica esta regla para el botón de 'confirm' pisando los valores de las propiedades compartidas con .button.
+*/
+.confirm {
+  background: green;
+  color: white;
+  font-weight: bold;
+} 
+/*
+- Pedimos que comparta ambas clases así solo se aplica al de abajo.
+*/
+.text.child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
