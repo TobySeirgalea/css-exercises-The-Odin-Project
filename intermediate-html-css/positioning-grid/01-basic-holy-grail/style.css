@@ -9,6 +9,10 @@ html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  display: grid;
+  grid-template-columns: [fst-col-start] 1fr [snd-col-start] 3fr [snd-col-end];
+  grid-template-rows: repeat(1fr, 4);
+  gap: 15px;
 }
 
 .container div {
@@ -22,14 +26,17 @@ html {
 
 .header {
   background-color: #006157;
+  grid-column: fst-col-start / snd-col-end;
 }
 
 .sidebar {
   background-color: #005B94;
+  grid-row: 2 / 4;
 }
 
 .nav {
   background-color: #642cde;
+  grid-column-start: snd-col-start;
 }
 
 .article {
@@ -38,6 +45,7 @@ html {
 
 .footer {
   background-color: #393f4d;
+  grid-column: fst-col-start/ snd-col-end;
 }
 
 .article p {
